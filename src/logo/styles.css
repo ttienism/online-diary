@@ -1,0 +1,16 @@
+.logo{
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    color:rgb(165, 106, 157);
+    font-size: 50px;
+    font-weight: 600;
+}
+.img{
+    width: 280px;
+    height: 250px;
+    vertical-align: middle;
+}

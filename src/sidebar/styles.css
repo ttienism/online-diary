@@ -1,0 +1,16 @@
+.sidebarcontainer{
+    align-content: center;
+    justify-content: space-between;
+}
+.cardHeader{
+    text-align: center;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 10px 0px;
+    color: rgb(165, 106, 157);  
+}
+.smicons a{ 
+    margin: 0px 10px;
+    padding: 10px;
+    justify-content: space-between;
+}

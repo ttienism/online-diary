@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.latestPost{
+    width: 70%;
+    background: #fff;
+}
+
+.sidebar{
+    width: 25%;
+    background: #fff;
+}

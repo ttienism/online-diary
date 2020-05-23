@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.nav-item a{
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #B46AB4;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: monospace;
+}
+
+.nav-item a:hover{
+    color: darkslateblue;
+}

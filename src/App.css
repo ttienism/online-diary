@@ -1,0 +1,10 @@
+body{
+    background: rgb(241, 210, 237);
+    
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.App {
+    margin: 0 auto;
+    width: 90%;
+    
+}
