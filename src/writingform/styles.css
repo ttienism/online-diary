@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 .diaryinput{
-    display: flex;
+    display: block;
     font-family: monospace;
     font-size: 15px;
     margin: 0px 20px;
@@ -25,14 +25,17 @@
 .diaryinput textarea{
     border: 1px rgb(165, 106, 157) solid;
     border-radius: 10px;
+    margin-top: 10px;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 140px;
     
 }
 
 .saveButton{
     border: 1px rgb(165, 106, 157) solid;
     border-radius: 10px;
+    background: hotpink;
+    color: #fff;
     font-size: 15px;
     padding: 10px 20px;
     margin-left: 615px;
