@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+This is my personal project, which simply lets us write a diary and then store data to Firebase real-time database. This project has potential to grow more.
+
 ## Available Scripts
 
 In the project directory, you can run:
