@@ -28,14 +28,25 @@ class Form extends Component{
         });
     }
     handleSubmit(e){  
-        fire.database().ref('messages').push(this.state.date+this.state.diary);
+        const { date, diary } = this.state;
+        e.preventDefault(); // <- prevent form submit from reloading the page
+        console.log(this.state.date + this.state.diary);
+        fire.database().ref('messages').push({
+            date: date,
+            diary: diary,
+          });
+        alert("Saved!");
         this.setState({
             date: '',
             diary: ''
-        })
-        //console.log(this.state.date + this.state.diary)
-        e.preventDefault();
+        });
     }
+
+    // refreshPage(){
+    //     document.getElementById(userCityEmail).value = "";
+    //     document.getElementById(cityTextField).value = "";
+    //   }
+    
 
     render(){
         return(
@@ -44,16 +55,16 @@ class Form extends Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="dateinput">
                         <label>Date </label>
-                        <input onChange={this.handleFormChange} id="date" 
+                        <input onChange={this.handleFormChange} id="date" value={this.state.date} 
                         type="date" name="date" /><br></br>
                     </div>
                     <div className="diaryinput">
                         <label>Diary </label>
-                        <textarea onChange={this.handleFormChange} id="diary"
+                        <textarea onChange={this.handleFormChange} id="diary" value={this.state.diary}
                         placeholder="Your feelings here" name="diary"></textarea>
                     </div> 
                     <div className="buttonAction">
-                        <button type="submit" value="Submit" className="saveButton" >Save</button>
+                        <button type="submit" value="Submit" className="saveButton">Save</button>
                     </div> 
                 </form>  
             </Card>
